@@ -1,0 +1,56 @@
+Standar API
+
+{root.api}/{version}/{grouping}/{endpoint}
+SAMPLE:
+http://mern-api.faturweb.com/v1/auth/login
+
+standar status response
+
+200 -- ok -> call api success
+201 -- CREATED -> Post success
+400 -- BAD REQUEST -> Error on client side (bisa input yang salah dll)
+401 -- UNAUTHORIZATIED -> User Not Authorized to the REQUEST
+403 -- FORBIDDEN --> User not allowed to access
+404 -- NOT FOUND --> REQUEST endpoint not FOUND
+500 -- INTERNAL SERVER ERROR --> Erro on serever side
+502 -- BAD GATEWAY --> invalid response from another REQUEST
+
+GOROUP: Authentication
+
+[1] - Register
+{root.api}/{version}/auth/Register
+
+req:
+{
+    "nama": "fatur rahman gandi",
+    "email": "fatur691@gmailc.com,
+    "password": "mantap1234" 
+}
+
+res:
+{
+    "message": "Register success",
+    "data": {
+        "id": 1,
+         "nama": "fatur rahman gandi",
+         "email": "fatur691@gmailc.com,
+         "password": "mantap1234" 
+    }
+}
+
+err-response:
+404 -> input yang anda masukan tidak valid
+
+[2] - login
+{root.api}/{version}/auth/login
+
+req:
+{
+    ""
+}
+
+GOROUP: BLOG
+[1] - CREATE Blog POST
+[2] - 
+[3] - 
+[4] - 
