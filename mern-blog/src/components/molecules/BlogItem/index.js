@@ -8,7 +8,12 @@ const BlogItem = (props) => {
   const { image, title, name, date, body, onDelete, _id } = props;
   return (
     <div className="blog-item">
-      <img className="image-thumb" src={image} alt="post" />
+      <img
+        className="image-thumb"
+        src={image}
+        alt="post"
+        onClick={() => history.push(`/detail-blog/${_id}`)}
+      />
       <div className="content-detail">
         <div className="title-wrapper">
           <p className="title">{title}</p>

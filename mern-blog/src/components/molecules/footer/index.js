@@ -44,7 +44,7 @@ const Footer = () => {
           />
           <Icon img={ICTelegram} />
           <Icon img={ICDiscord} />
-          <Icon img={ICgithub} />
+          <Icon img={ICgithub} link={"https://github.com/Fatur-r45/"} />
         </div>
       </div>
       <div className="copyright">

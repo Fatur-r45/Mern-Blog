@@ -3,7 +3,7 @@
 .home-page-wrapper {
   // padding-top: 20px;
 
-  .nama {
+  .nama-wrapper {
     color: salmon;
     font-weight: bold;
     font-size: 30px;
@@ -58,6 +58,13 @@
     width: 400px;
     display: flex;
     margin: auto;
+    Button{
+      transition: 0.5s;
+    }
+    Button:hover {
+      background-color: #0c1e7f;
+      transform: scale(1.2);
+    }
   }
   .text-page {
     font-size: 28px;

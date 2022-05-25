@@ -34,7 +34,7 @@ const Home = (props) => {
 
   const confirmDelete = (id) => {
     confirmAlert({
-      title: "Lakukan Konfirmasi",
+      title: "Konfirmasi",
       message: "Apakah kamu yakin ingin menghapus.",
       buttons: [
         {
@@ -67,7 +67,7 @@ const Home = (props) => {
 
   return (
     <div className="home-page-wrapper">
-      <p className="nama">
+      <p className="nama-wrapper">
         selamat datang <span className="name">{props.name}</span>
       </p>
       {/* <Button /> */}

@@ -2,7 +2,7 @@ import Axios from "axios";
 // Axios.defaults.withCredentials = false;
 
 export const setDataBlog = (page) => (dispatch) => {
-  Axios.get(`http://localhost:4000/v1/blog/posts?page=${page}&perPage=4`)
+  Axios.get(`http://localhost:4000/v1/blog/posts?page=${page}&perPage=2`)
     .then((result) => {
       const responseAPI = result.data;
       // console.log("data API: ", responseAPI);
